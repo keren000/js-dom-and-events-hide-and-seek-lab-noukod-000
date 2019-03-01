@@ -7,7 +7,6 @@ function nestedTarget() {
 }
 
 function increaseRankBy(num){
-
   const lis = document
 
   .getElementById('app')
@@ -19,11 +18,13 @@ for (let n = 0; n < lis.length; n++) {
 }
 
     function deepestChild(){
-      let first = document.getElementById('grand-node')
-       let second = first.children[0]
-       while (second) {
-         first = second
-         second = first.children[0]
-       }
-       return first
-     }
+    //   let first = document.getElementById('grand-node')
+    //    let second = first.children[0]
+    //    while (second) {
+    //      first = second
+    //      second = first.children[0]
+    //    }
+    //    return first
+    //  }
+    return document.querySelector('#grand-node').querySelectorAll('div')[3]
+}
